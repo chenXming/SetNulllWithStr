@@ -1,6 +1,6 @@
 # SetNulllWithStr
 
-主要方法: 类型识别:将所有`NSNull`类型转化成@""
+主要方法: 类型识别:将所有`NSNull`类型转化成`@""`
 ```OC
 +(id)changeType:(id)myObj
 {
