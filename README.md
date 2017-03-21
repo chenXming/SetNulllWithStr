@@ -1,8 +1,7 @@
 # SetNulllWithStr
-iOS-处理网络请求的返回的数据字符串为空的问题
 
-//主要方法
-//类型识别:将所有的NSNull类型转化成@""
+主要方法: 类型识别:将所有`NSNull`类型转化成@""
+```OC
 +(id)changeType:(id)myObj
 {
     if ([myObj isKindOfClass:[NSDictionary class]])
@@ -26,6 +25,9 @@ iOS-处理网络请求的返回的数据字符串为空的问题
         return myObj;
     }
 }
+```
 使用方法：
-    NSDictionary *dic = (NSDictionary*)responseObject;
-    NSDictionary *newDic = [NSDictionary changeType:dic];
+```OC
+	NSDictionary *dic = (NSDictionary*)responseObject;
+	NSDictionary *newDic = [NSDictionary changeType:dic];
+```
