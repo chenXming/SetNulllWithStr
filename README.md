@@ -1,6 +1,7 @@
 # SetNulllWithStr
-
-主要方法: 类型识别:将所有`NSNull`类型转化成`@""`
+iOS 网络请求中的空类型字符串转换
+-
+将网络请求的返回的空数据所有`NSNull`类型转化成`@""`
 ```OC
 +(id)changeType:(id)myObj
 {
