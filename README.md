@@ -32,3 +32,4 @@ iOS 网络请求中的空类型字符串转换
 	NSDictionary *dic = (NSDictionary*)responseObject;
 	NSDictionary *newDic = [NSDictionary changeType:dic];
 ```
+觉得有用的话请给个star吧^_^
