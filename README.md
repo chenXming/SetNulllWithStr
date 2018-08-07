@@ -1,7 +1,7 @@
 # SetNulllWithStr
 iOS 网络请求中的空类型字符串转换
 -
-将网络请求的返回的空数据所有`NSNull`类型转化成`@""`
+将网络请求的返回的空数据所有`NSNull`类型转化成`@""`，利用递归的思想，查找`“<null>”`,替换为`@“”`
 ```OC
 +(id)changeType:(id)myObj
 {
